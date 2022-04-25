@@ -29,7 +29,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng_POM.xml</suiteXmlFile>
-						
+						<suiteXmlFile>testng_POM_recap.xml</suiteXmlFile>
 						<!-- <suiteXmlFile>testng_dragDroptest.xml</suiteXmlFile> -->
 						<!-- <suiteXmlFile>testng_crossBrowserTest.xml</suiteXmlFile> -->
 					</suiteXmlFiles>
