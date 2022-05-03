@@ -30,6 +30,7 @@ public class DragDropExample {
 		driver = new ChromeDriver();
 		driver.get("https://www.globalsqa.com/demo-site/draganddrop/");
 		driver.manage().window().maximize();
+		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		
@@ -49,7 +50,7 @@ public class DragDropExample {
 		WebElement dragDropFrame = driver.findElement(By.xpath("//iframe[contains(@data-src,'droppable/photo')]"));
 		driver.switchTo().frame(dragDropFrame);
 		
-		
+		Thread.sleep(4000);	
 		WebElement Image3 =driver.findElement(By.xpath("//img[contains(@src,'tatras3')]"));
 		WebElement Image4 =driver.findElement(By.xpath("//img[contains(@src,'tatras4')]"));
 		WebElement trash =driver.findElement(By.cssSelector("div#trash"));
